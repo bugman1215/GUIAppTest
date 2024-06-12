@@ -2,22 +2,34 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QComboBox>
+#include <QPushButton>
+#include <QLabel>
+#include <QTableWidget>
 
-QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
-QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void performCalculation();
+    void updateHistory(double num1, double num2, const QString &op, double result);
+    void clearHistory();
+
 private:
+    void setupUI();
+
     Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H
+

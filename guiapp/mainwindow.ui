@@ -35,8 +35,11 @@
        <height>26</height>
       </rect>
      </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="input1">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -46,7 +49,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="input2">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -56,7 +59,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="calculateButton">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -66,10 +69,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Calculate</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="resultLabel">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -79,7 +82,20 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Result</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clearButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>280</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
      </property>
     </widget>
    </widget>
@@ -95,7 +111,7 @@
     <property name="title">
      <string>History</string>
     </property>
-    <widget class="QTableWidget" name="tableWidget">
+    <widget class="QTableWidget" name="historyTable">
      <property name="geometry">
       <rect>
        <x>20</x>
