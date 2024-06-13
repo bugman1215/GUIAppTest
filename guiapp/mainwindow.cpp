@@ -1,18 +1,30 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
-
+#include <QFile>
+#include <QTextStream>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
+    loadStyleSheet();
     setupUI();
-    connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(performCalculation()));
+// connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(performCalculation()));
     connect(ui->calculateButton, SIGNAL(clicked()), this, SLOT(performCalculation()));
     connect(ui->clearButton, &QPushButton::clicked, this, &MainWindow::clearHistory);
 }
 
 MainWindow::~MainWindow() {
     delete ui;
+}
+
+void MainWindow::loadStyleSheet() {
+    QFile file("style.qss");
+    if (file.open(QIODevice::ReadOnly)) {
+        QTextStream stream(&file);
+        QString stylesheet = stream.readAll();
+        setStyleSheet(stylesheet);
+        file.close();
+    }
 }
 
 void MainWindow::setupUI() {

@@ -27,6 +27,7 @@ private slots:
 
 private:
     void setupUI();
+    void loadStyleSheet();
 
     Ui::MainWindow *ui;
 };
