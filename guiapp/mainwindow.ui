@@ -206,9 +206,9 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>140</x>
        <y>130</y>
-       <width>71</width>
+       <width>91</width>
        <height>20</height>
       </rect>
      </property>
@@ -220,7 +220,7 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
  border-radius:10px;</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Operand&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Operation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
