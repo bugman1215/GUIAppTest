@@ -13,9 +13,15 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">selection-color: rgba(236, 236, 236, 130);
+selection-background-color: rgba(236, 236, 236, 130);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(80, 156, 255, 120)</string>
+    <string notr="true">background-color: rgb(0, 0, 0);
+selection-color: rgba(80, 80, 80, 150);
+selection-background-color:  rgba(80, 80, 80, 150);</string>
    </property>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
@@ -31,7 +37,7 @@
 </string>
     </property>
     <property name="title">
-     <string>Calculation</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -39,8 +45,8 @@
     <widget class="QComboBox" name="comboBox">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>140</y>
+       <x>140</x>
+       <y>160</y>
        <width>71</width>
        <height>26</height>
       </rect>
@@ -49,41 +55,53 @@
       <bool>true</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">selection-color: rgb(218, 218, 218);
-background-color: rgb(93, 93, 93);</string>
+      <string notr="true">selection-color: rgb(34, 34, 34);
+background-color: rgba(225, 225, 225, 160);;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="input1">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>80</y>
+       <x>120</x>
+       <y>90</y>
        <width>113</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(225, 225, 225, 180);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="input2">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>200</y>
+       <x>120</x>
+       <y>230</y>
        <width>113</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(225, 225, 225, 180);</string>
      </property>
     </widget>
     <widget class="QPushButton" name="calculateButton">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>260</y>
-       <width>93</width>
-       <height>29</height>
+       <x>130</x>
+       <y>300</y>
+       <width>91</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(0, 0, 0)</string>
+      <string notr="true"> background-color: rgba(255, 187, 51, 150);
+ border-style: solid;
+ border-width:1px;
+ border-radius:15px;
+font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
+ border-style: solid;
+</string>
      </property>
      <property name="text">
       <string>Calculate</string>
@@ -92,11 +110,16 @@ background-color: rgb(93, 93, 93);</string>
     <widget class="QLabel" name="resultLabel">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>370</y>
+       <x>110</x>
+       <y>400</y>
        <width>141</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-style: solid;
+font: 700 10pt &quot;Segoe UI&quot;;
+ border-radius:12px;</string>
      </property>
      <property name="lineWidth">
       <number>2</number>
@@ -114,11 +137,21 @@ background-color: rgb(93, 93, 93);</string>
     <widget class="QPushButton" name="clearButton">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>300</y>
+       <x>130</x>
+       <y>340</y>
        <width>93</width>
-       <height>29</height>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color:rgba(126, 123, 95, 200);
+ border-style: solid;
+ border-width:1px;
+ border-radius:15px;
+font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
+ border-style: solid;
+
+</string>
      </property>
      <property name="text">
       <string>Clear</string>
@@ -127,7 +160,7 @@ background-color: rgb(93, 93, 93);</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>60</y>
        <width>71</width>
        <height>20</height>
@@ -135,6 +168,10 @@ background-color: rgb(93, 93, 93);</string>
      </property>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-style: solid;
+ border-radius:10px;</string>
      </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Input 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -146,14 +183,18 @@ background-color: rgb(93, 93, 93);</string>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>180</y>
+       <x>140</x>
+       <y>200</y>
        <width>71</width>
        <height>20</height>
       </rect>
      </property>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-style: solid;
+ border-radius:10px;</string>
      </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Input 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -165,8 +206,8 @@ background-color: rgb(93, 93, 93);</string>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>120</y>
+       <x>140</x>
+       <y>130</y>
        <width>71</width>
        <height>20</height>
       </rect>
@@ -174,8 +215,42 @@ background-color: rgb(93, 93, 93);</string>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
      </property>
+     <property name="styleSheet">
+      <string notr="true"> border-style: solid;
+ border-radius:10px;</string>
+     </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Operand&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt rgb(255, 255, 255) &quot;Terminal&quot;;
+
+ background-color: rgba(255, 255, 255, 0);
+ border-style: solid;
+ border-radius:12px;
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;Calculation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -196,7 +271,7 @@ background-color: rgb(93, 93, 93);</string>
 background-color: rgba(142, 154, 157, 120);</string>
     </property>
     <property name="title">
-     <string>History</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -205,9 +280,9 @@ background-color: rgba(142, 154, 157, 120);</string>
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>20</y>
+       <y>60</y>
        <width>301</width>
-       <height>441</height>
+       <height>401</height>
       </rect>
      </property>
      <property name="maximumSize">
@@ -216,11 +291,20 @@ background-color: rgba(142, 154, 157, 120);</string>
        <height>16777215</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: rgba(230, 230, 230, 100);
+font: 700 9pt &quot;Segoe UI&quot;;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+
+alternate-background-color: rgb(94, 94, 94);</string>
+     </property>
      <property name="verticalScrollBarPolicy">
       <enum>Qt::ScrollBarAsNeeded</enum>
      </property>
      <property name="horizontalScrollBarPolicy">
-      <enum>Qt::ScrollBarAlwaysOff</enum>
+      <enum>Qt::ScrollBarAsNeeded</enum>
      </property>
      <property name="autoScroll">
       <bool>true</bool>
@@ -272,6 +356,36 @@ background-color: rgba(142, 154, 157, 120);</string>
      <column/>
      <column/>
     </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt rgb(255, 255, 255) &quot;Terminal&quot;;
+
+ background-color: rgba(255, 255, 255, 0);
+ border-style: solid;
+ border-radius:12px;
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;Calculation History&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label">
     <property name="enabled">
@@ -279,21 +393,26 @@ background-color: rgba(142, 154, 157, 120);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>20</y>
-      <width>121</width>
-      <height>31</height>
+      <x>270</x>
+      <y>0</y>
+      <width>251</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 9pt &quot;Terminal&quot;;
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.00480769 rgba(0, 54, 226, 107), stop:1 rgba(77, 18, 217, 143));</string>
+     <string notr="true">font: 700 12pt rgb(255, 255, 255) &quot;Terminal&quot;;
+
+ background-color: rgba(255, 255, 255, 0);
+ border-style: solid;
+ border-width:1px;
+ border-radius:12px;
+</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#070707;&quot;&gt;CALCULATOR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; color:#ffc822;&quot;&gt;CALCULATOR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

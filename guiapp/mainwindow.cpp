@@ -35,6 +35,7 @@ void MainWindow::setupUI() {
     ui->historyTable->setColumnCount(4);
     QStringList headers{"Input 1", "Operator", "Input 2", "Result"};
     ui->historyTable->setHorizontalHeaderLabels(headers);
+    ui->historyTable->setStyleSheet("QHeaderView::section { background-color: rgba(255, 187, 51, 120)}");
 }
 
 void MainWindow::performCalculation() {
