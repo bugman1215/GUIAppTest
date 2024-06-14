@@ -45,7 +45,7 @@ selection-background-color:  rgba(80, 80, 80, 150);</string>
     <widget class="QComboBox" name="comboBox">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>160</y>
        <width>71</width>
        <height>26</height>
@@ -62,7 +62,7 @@ background-color: rgba(225, 225, 225, 160);;</string>
     <widget class="QLineEdit" name="input1">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>90</y>
        <width>113</width>
        <height>26</height>
@@ -75,7 +75,7 @@ background-color: rgba(225, 225, 225, 160);;</string>
     <widget class="QLineEdit" name="input2">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>230</y>
        <width>113</width>
        <height>26</height>
@@ -88,7 +88,7 @@ background-color: rgba(225, 225, 225, 160);;</string>
     <widget class="QPushButton" name="calculateButton">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>300</y>
        <width>91</width>
        <height>31</height>
@@ -110,7 +110,7 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
     <widget class="QLabel" name="resultLabel">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>120</x>
        <y>400</y>
        <width>141</width>
        <height>41</height>
@@ -137,7 +137,7 @@ font: 700 10pt &quot;Segoe UI&quot;;
     <widget class="QPushButton" name="clearButton">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>340</y>
        <width>93</width>
        <height>31</height>
@@ -160,7 +160,7 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>60</y>
        <width>71</width>
        <height>20</height>
@@ -183,7 +183,7 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>200</y>
        <width>71</width>
        <height>20</height>
@@ -206,7 +206,7 @@ font: 700 10pt rgb(255, 255, 255) &quot;Terminal&quot;;
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>130</y>
        <width>71</width>
        <height>20</height>
