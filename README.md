@@ -1,6 +1,7 @@
 # Qt Calculator 
-<img src="ui.png" alt="Calculator Screenshot" width="500"/>
+
 This Qt C++ application provides a basic calculator capable of basic arithmetic operations (addition, subtraction, multiplication, division). The UI is divided into two main sections: the calculation controls on the left and a history table on the right that logs each calculation.
+<img src="ui.png" alt="Calculator Screenshot" width="500"/>
 
 ## Features
 
